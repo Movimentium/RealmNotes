@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		0C1D75D627752A0800B7E30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1D75D527752A0800B7E30E /* LaunchScreen.storyboard */; };
 		0C1D75D827752A2100B7E30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1D75D727752A2100B7E30E /* Main.storyboard */; };
+		0C5F11EA27762C9B0037A456 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5F11E927762C9B0037A456 /* Style.swift */; };
+		0C5F11EC277631170037A456 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5F11EB277631170037A456 /* DBManager.swift */; };
+		0C5F11EE277633930037A456 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5F11ED277633930037A456 /* Model.swift */; };
 		0CD2644627762721000FEB08 /* NoteBooksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2644527762721000FEB08 /* NoteBooksListVC.swift */; };
 		0CD264482776285E000FEB08 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD264472776285E000FEB08 /* RealmModel.swift */; };
+		0CDB214627765F9900C01DB5 /* NoteBooksListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB214527765F9900C01DB5 /* NoteBooksListPresenter.swift */; };
 		0CF568532775053700F6CA5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF568522775053700F6CA5C /* AppDelegate.swift */; };
 		0CF568552775053700F6CA5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF568542775053700F6CA5C /* SceneDelegate.swift */; };
 		0CF5685C2775053900F6CA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF5685B2775053900F6CA5C /* Assets.xcassets */; };
@@ -20,8 +24,12 @@
 /* Begin PBXFileReference section */
 		0C1D75D527752A0800B7E30E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1D75D727752A2100B7E30E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0C5F11E927762C9B0037A456 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		0C5F11EB277631170037A456 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		0C5F11ED277633930037A456 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0CD2644527762721000FEB08 /* NoteBooksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBooksListVC.swift; sourceTree = "<group>"; };
 		0CD264472776285E000FEB08 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		0CDB214527765F9900C01DB5 /* NoteBooksListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBooksListPresenter.swift; sourceTree = "<group>"; };
 		0CF5684F2775053700F6CA5C /* RealmNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF568522775053700F6CA5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CF568542775053700F6CA5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,9 +75,13 @@
 			children = (
 				0CF568522775053700F6CA5C /* AppDelegate.swift */,
 				0CF568542775053700F6CA5C /* SceneDelegate.swift */,
+				0C5F11ED277633930037A456 /* Model.swift */,
 				0CD264472776285E000FEB08 /* RealmModel.swift */,
+				0C5F11EB277631170037A456 /* DBManager.swift */,
+				0CDB214527765F9900C01DB5 /* NoteBooksListPresenter.swift */,
 				0CD2644527762721000FEB08 /* NoteBooksListVC.swift */,
 				0C1D75D727752A2100B7E30E /* Main.storyboard */,
+				0C5F11E927762C9B0037A456 /* Style.swift */,
 				0CF5685B2775053900F6CA5C /* Assets.xcassets */,
 				0C1D75D527752A0800B7E30E /* LaunchScreen.storyboard */,
 				0CF568602775053900F6CA5C /* Info.plist */,
@@ -209,10 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5F11EE277633930037A456 /* Model.swift in Sources */,
 				0CF568532775053700F6CA5C /* AppDelegate.swift in Sources */,
+				0C5F11EC277631170037A456 /* DBManager.swift in Sources */,
 				0CD264482776285E000FEB08 /* RealmModel.swift in Sources */,
 				0CD2644627762721000FEB08 /* NoteBooksListVC.swift in Sources */,
 				0CF568552775053700F6CA5C /* SceneDelegate.swift in Sources */,
+				0C5F11EA27762C9B0037A456 /* Style.swift in Sources */,
+				0CDB214627765F9900C01DB5 /* NoteBooksListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +365,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,7 +377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,6 +395,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +407,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
