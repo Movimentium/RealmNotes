@@ -86,7 +86,20 @@ class DBManager {
         }
     }
     
+    func delete(notebook: RNoteBook) {
+        do {
+            try realm.write {
+                realm.delete(notebook)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
     
-    
+    // MARK: - Debug methods
+    func debug_printNoteBooks() {
+        let noteBooksResults: Results<RNoteBook> = realm.objects(RNoteBook.self)
+        print(noteBooksResults)
+    }
     
 }
